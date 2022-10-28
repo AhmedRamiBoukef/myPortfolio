@@ -1,26 +1,29 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer base {
+    html {
+        font-family: "Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI";
+        scroll-behavior: smooth;
+    }
   }
-  body {
-    color: white;
-    background: black;
+
+  
+
+.bgImage .mysvg {
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    
   }
-}
+  .bgImage {
+    background-color: #F4F6F8;
+    position: relative;
+    overflow: hidden;
+  }
