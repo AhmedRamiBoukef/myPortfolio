@@ -27,3 +27,8 @@
     position: relative;
     overflow: hidden;
   }
+  .marker {
+    border-width: 0 0 20px 0;
+    border-image:url('../images/marker.svg');
+    border-image-slice: 20 0 20 0;
+}
