@@ -6,5 +6,15 @@ export default [
         title: "Simple Protfolio",
         tags: ["Html","CSS","JS"],
         photo: simple,
+    },
+    {
+        title: "Simple Protfolio",
+        tags: ["Html","CSS","JS"],
+        photo: simple,
+    },
+    {
+        title: "Simple Protfolio",
+        tags: ["Html","CSS","JS"],
+        photo: simple,
     }
 ]
