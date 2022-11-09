@@ -5,6 +5,8 @@ import { About } from "../components/About/About";
 import { Skills } from "../components/Skills/Skills"; 
 import { Expertise } from "../components/Expertise/Expertise";
 import { Projects } from "../components/Projects/Projects";
+import { Contact } from "../components/Contact/Contact";
+import { Footer } from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +21,8 @@ export default function Home() {
       <Expertise/>
       <Skills/>
       <Projects/>
-      <div className="h-36 w-2"></div>
+      <Contact/>
+      <Footer />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export const Header = () => {
             <LinkedInIcon className='w-5'/>
           </div>
           <div className='md:mt-10 mt-5'>
-            <a href="" className='py-2.5 px-9 bg-[#f6e05e] rounded-full font-bold text-center'>
+            <a href="" className='py-2.5 px-9 bg-[#f6e05e] transition ease-in-out duration-300 hover:bg-[#F4F6F8] hover:border-2 hover:border-[#f6e05e] rounded font-bold text-center'>
               Get In Touch
             </a>
           </div>
