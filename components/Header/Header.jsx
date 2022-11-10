@@ -23,10 +23,10 @@ export const Header = () => {
           </div>
           <p className='text-xl md:mt-8 md:mb-4'>FullStack Web & Mobile Developer</p>
           <div className='w-full flex gap-2 flex-wrap h-10 items-center justify-center md:justify-start'>
-            <GitHubIcon className='w-5' />
-            <FacebookIcon className='w-5'/>
-            <InstagramIcon className='w-5'/>
-            <LinkedInIcon className='w-5'/>
+            <a href='https://github.com/AhmedRamiBoukef'><GitHubIcon className='w-5' /></a>
+            <a href='https://www.facebook.com/profile.php?id=100023699016162'><FacebookIcon className='w-5'/></a>
+            <a href='https://instagram.com/rami_boukef?igshid=YmMyMTA2M2Y='><InstagramIcon className='w-5'/></a>
+            <a href='https://www.linkedin.com/in/ahmedrami-boukef-029678228'><LinkedInIcon className='w-5'/></a>
           </div>
           <div className='md:mt-10 mt-5'>
             <a href="" className='py-2.5 px-9 bg-[#f6e05e] transition ease-in-out duration-300 hover:bg-[#F4F6F8] hover:border-2 hover:border-[#f6e05e] rounded font-bold text-center'>

@@ -22,15 +22,12 @@ export const Skills = () => {
             {data.map(elem => (
                 <SkillItem title={elem.title} imageURL={elem.imageURL} key={elem[0]}/>
             ))}
-            
-            
         </div>
         <div className='bg-[#f4f6f8] p-2 w-full mb-10 flex justify-center items-center'>
           <button onClick={showMore} className='py-2.5 px-9 bg-[#f6e05e] transition ease-in-out duration-300 hover:bg-[#F4F6F8] hover:border-2 hover:border-[#f6e05e] rounded font-bold text-center'>
             {visible ? "Show Less": "Show More"}
           </button>
-        </div>  
-
+        </div>
     </div>
   )
 }

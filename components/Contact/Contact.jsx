@@ -23,17 +23,21 @@ export const Contact = () => {
             </div>
             <form action="https://formspree.io/f/xknekqjv" method="post" className='w-1/2'>
                 
-                <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your name</label>
-                <input name='name' type="text" id="text" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="name" />
+                <div className='w-1/2 float-left'>
+                    <label for="name" className="block mb-2 text-sm font-medium text-gray-900">Your name</label>
+                    <input name='name' type="text" id="text" aria-describedby="helper-text-explanation" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="name" />
+                </div>
                 
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-                <input name='email' type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="name@gmail.com" />
+                <div className='w-1/2 float-right pl-4'>
+                    <label for="email" className="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <input name='email' type="email" id="email" aria-describedby="helper-text-explanation" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="name@gmail.com" />
+                </div>
 
-                <label for="Subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
-                <input name='subject' type="text" id="Subject" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="Subject" />
+                <label for="Subject" className="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                <input name='subject' type="text" id="Subject" aria-describedby="helper-text-explanation" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="Subject" />
 
-                <label for="Message" class="block mb-2 text-sm font-medium text-gray-900">Message</label>
-                <textarea name='message' type="text" id="Message" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " />
+                <label for="Message" className="block mb-2 text-sm font-medium text-gray-900">Message</label>
+                <textarea name='message' type="text" id="Message" aria-describedby="helper-text-explanation" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " />
 
                 <div className='w-full p-2 flex justify-center items-center'>
                     <button type="submit" className='py-2.5 px-9 bg-[#f6e05e] transition ease-in-out duration-300 hover:bg-[#F4F6F8] hover:border-2 hover:border-[#f6e05e] rounded font-bold text-center'>Submit</button>
