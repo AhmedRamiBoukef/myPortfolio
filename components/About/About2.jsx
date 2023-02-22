@@ -30,7 +30,7 @@ export const About2 = () => {
                     </div>
                 </div>
             </div>
-            <div className="losange shadow-xl	">
+            <div className="losange shadow-xl">
                 <div className="los1">
                     <Image src={image} alt="image"/>
 

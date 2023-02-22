@@ -5,7 +5,7 @@ import { Skills } from "../components/Skills/Skills";
 import { Expertise } from "../components/Expertise/Expertise";
 import { Projects } from "../components/Projects/Projects";
 import { Contact } from "../components/Contact/Contact";
-import { Footer } from "../components/footer/Footer";
+import { Footer } from "../components/Footer/Footer";
 import { About2 } from "../components/About/About2";
 import { Projects2 } from "../components/Projects/Projects2";
 
