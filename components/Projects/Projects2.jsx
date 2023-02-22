@@ -16,11 +16,11 @@ export const Projects2 = () => {
     setVisible(!visible)
   }
   return (
-    <div className=' px-12 flex flex-col justify-center items-center' id='Projects'>
+    <div className='w-full px-12 flex flex-col justify-center items-center' id='Projects'>
         <Title className="mx-auto mb-14" title="My Projects"/>
-        <div className='my-6'>
-            {projectList.map(elem => (
-                <ProjectItem2 title={elem.title} tags={elem.tags} photo={elem.photo} key={elem.title} />
+        <div className='my-6 w-full'>
+            {projectList.map((elem,i) => (
+                <ProjectItem2 title={elem.title} tags={elem.tags} orientation={!(i % 2)} links={elem.links} description={elem.description} image={elem.photo} key={i} />
             ))}
         </div>
         <div className='p-2 w-full mb-10 flex justify-center items-center'>
