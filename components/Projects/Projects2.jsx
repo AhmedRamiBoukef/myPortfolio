@@ -20,6 +20,7 @@ export const Projects2 = () => {
         <Title className="mx-auto mb-14" title="My Projects"/>
         <div className='my-6 w-full'>
             {projectList.map((elem,i) => (
+              
                 <ProjectItem2 title={elem.title} tags={elem.tags} orientation={!(i % 2)} links={elem.links} description={elem.description} image={elem.photo} key={i} />
             ))}
         </div>
