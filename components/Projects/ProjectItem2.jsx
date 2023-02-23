@@ -4,8 +4,8 @@ import React from 'react'
 export const ProjectItem2 = ({title,image,tags,orientation,description,links}) => {
   return (
     <div className='w-full relative my-4 aspect-video drop-shadow md:drop-shadow-none'>
-        <div className={`overflow-hidden rounded-lg w-[60%] absolute ${orientation ? "left-0" : "right-0"}`}>
-            <Image src={image} alt="image" className='rounded-lg blur-sm brightness-50 hover:blur-0 hover:brightness-100 transition delay-75 ease-in-out'  />    
+        <div className={`overflow-hidden rounded-lg w-[60%] absolute aspect-video ${orientation ? "left-0" : "right-0"}`}>
+            <Image src={image} width='100%' height="100%" layout="fill" alt="image" className='rounded-lg blur-sm brightness-50 hover:blur-0 hover:brightness-100 transition delay-75 ease-in-out'  />    
         </div>
         <div className={`z-10 ${orientation ? "ml-auto md:items-end right-0" : "md:items-start left-0"} flex flex-col gap-4 absolute w-[60%]`}>
             <h2 className='text-[#00509D] font-semibold cursor-default'>Featured Project</h2>
