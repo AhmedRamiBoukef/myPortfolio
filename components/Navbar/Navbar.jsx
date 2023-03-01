@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import {motion} from 'framer-motion'
+import MenuIcon from '@mui/icons-material/Menu';
+import Drawer from './Drawer';
 
 export const Navbar = () => {
     const [scroll,setScroll] = useState(true);
@@ -14,6 +15,8 @@ export const Navbar = () => {
     if (typeof window !== 'undefined') {
         window.addEventListener("scroll",changeBg)
       }
+    const [isOpen, setIsOpen] = useState(false);
+
     
     
   return (
@@ -22,11 +25,20 @@ export const Navbar = () => {
         <div className='text-2xl font-semibold leading-10'>
             Portfo<span className='text-[#DC143C]'>lio.</span>
         </div>
-        <div className='flex justify-around gap-6 mr-6 '>
+        <div className='md:flex justify-around gap-6 mr-6 hidden'>
             {["Home","About","Expertise","Skills","Projects","Contact"].map(elem => (
                 <a key={elem} href={`#${elem}`} className="font-semibold hover:text-[rgba(0,0,0,0.65)]">{elem}</a>
             ))}
         </div>
+        <MenuIcon className='block md:hidden cursor-pointer' onClick={() => setIsOpen(true)} />
+        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+            <div className='md:flex flex-col justify-around items-center gap-6 mr-6 hidden'>
+                {["Home","About","Expertise","Skills","Projects","Contact"].map(elem => (
+                    <a key={elem} href={`#${elem}`} className="font-semibold hover:text-[rgba(0,0,0,0.65)]">{elem}</a>
+                ))}
+            </div>
+        </Drawer>
+
             
         
     </div>

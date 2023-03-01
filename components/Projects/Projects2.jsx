@@ -24,11 +24,11 @@ export const Projects2 = () => {
                 <ProjectItem2 title={elem.title} tags={elem.tags} orientation={!(i % 2)} links={elem.links} description={elem.description} image={elem.photo} key={i} />
             ))}
         </div>
-        <div className='p-2 w-full mb-10 flex justify-center items-center'>
+        {/* <div className='p-2 w-full mb-10 flex justify-center items-center'>
           <button onClick={showMore} className='py-2.5 px-9 bg-[#f6e05e] transition ease-in-out duration-300 hover:bg-[#F4F6F8] hover:border-2 hover:border-[#f6e05e] rounded font-bold text-center'>
             {visible ? "Show Less": "Show More"}
           </button>
-        </div>
+        </div> */}
     </div>
   )
 }
