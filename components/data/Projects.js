@@ -9,15 +9,15 @@ const l = [
         title: "Simple Protfolio",
         tags: ["Html","CSS","JS"],
         photo: simple,
-        description: "Simple Portfolio is a web project developed with HTML, CSS, and JavaScript aimed at showcasing an individual's skills, experience, and projects in a clear and concise manner. The project is designed with a minimalist and user-friendly interface to ensure easy navigation and a professional presentation of the individual's work.",
+        description: "Simple Portfolio is a web project developed with HTML, CSS, and JavaScript aimed at showcasing an individual's skills, experience, and projects in a clear and concise manner.",
         links: [
             
             {
-                icon:<LaunchIcon/>, 
+                icon:<LaunchIcon className="text-red-600"/>, 
                 link:"https://ahmedramiboukef.github.io/Simple-Potfolio/", 
             },
             {
-                icon:<GitHubIcon/>, 
+                icon:<GitHubIcon className="text-red-600"/>, 
                 link:"https://github.com/AhmedRamiBoukef/Simple-Potfolio", 
             },
         ],
@@ -26,18 +26,18 @@ const l = [
         title: "Movies Website",
         tags: ["NextJS","TailwindCSS","MoviesAPI"],
         photo: "https://img.youtube.com/vi/kwM9h8GqSJ0/maxresdefault.jpg",
-        description: "Simple Portfolio is a web project developed with HTML, CSS, and JavaScript aimed at showcasing an individual's skills, experience, and projects in a clear and concise manner. The project is designed with a minimalist and user-friendly interface to ensure easy navigation and a professional presentation of the individual's work.",
+        description: "MoviesWebsite is a comprehensive platform showcasing movies from all genres,along with their rating, description,and release date.It also features trending movies and a wide selection of TV series.",
         links: [
             {
-                icon:<LaunchIcon/>, 
+                icon:<LaunchIcon className="text-red-600"/>, 
                 link:"movies-website-delta.vercel.app", 
             },
             {
-                icon:<GitHubIcon/>, 
+                icon:<GitHubIcon className="text-red-600"/>, 
                 link:"https://github.com/AhmedRamiBoukef/MoviesWebsite", 
             },
             {
-                icon:<YouTubeIcon/>, 
+                icon:<YouTubeIcon className="text-red-600"/>, 
                 link:"https://youtu.be/kwM9h8GqSJ0", 
             },
         ],
@@ -49,11 +49,11 @@ const l = [
         description: "This is a real estate web application allowing the user to publish and consult the real estate listings added by users. built with Next.js TailwindCSS React Query.",
         links: [
             {
-                icon:<GitHubIcon/>, 
+                icon:<GitHubIcon className="text-red-600"/>, 
                 link:"https://github.com/AhmedRamiBoukef/tpIGL", 
             },
             {
-                icon:<YouTubeIcon/>, 
+                icon:<YouTubeIcon className="text-red-600"/>, 
                 link:"https://youtu.be/N-NDgJStL8I", 
             },
         ],

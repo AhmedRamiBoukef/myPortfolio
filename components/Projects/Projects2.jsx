@@ -18,7 +18,7 @@ export const Projects2 = () => {
   return (
     <div className='w-full px-12 flex flex-col justify-center items-center' id='Projects'>
         <Title className="mx-auto mb-14" title="My Projects"/>
-        <div className='my-6 w-full'>
+        <div className='my-6 w-full [&>*]:my-32 last:mb-0'>
             {projectList.map((elem,i) => (
               
                 <ProjectItem2 title={elem.title} tags={elem.tags} orientation={!(i % 2)} links={elem.links} description={elem.description} image={elem.photo} key={i} />

@@ -7,7 +7,7 @@ export const About2 = () => {
   return (
     <div className='h-screen md:h-[80vh] md:my-12 my-32 gap-20 w-[100wh] px-12 flex flex-col justify-center items-center' id='About'>
         <Title className="mx-auto mb-14" title="About Me"/>
-        <div className='text-lg grid gap-10 items-center md:grid-cols-3 px-12 leading-5 text-center md:text-left' id='About'>
+        <div className='text-lg flex flex-col-reverse md:grid gap-10 items-center md:grid-cols-3 px-12 leading-5 text-center md:text-left' id='About'>
             <div className='md:col-span-2'>
                 <h1 className='my-4 text-4xl font-semibold'>Hi! 👋 I’m Ahmed Rami.</h1>
                 <p className='mb-4 '>I am passionate about UI/UX design and Web Design. I am a skilled front-end developer and master of graphic design tools such as Photoshop and Sketch. I am a quick learner and a team worker that gets the job done. I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas.</p>

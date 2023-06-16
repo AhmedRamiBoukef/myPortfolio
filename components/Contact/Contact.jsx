@@ -5,8 +5,8 @@ export const Contact = () => {
   return (
     <div className=' px-12 flex flex-col justify-center items-center mt-14' id='Contact'>
         <Title className="mx-auto mb-14" title="Contact"/>
-        <div className='flex gap-6 mt-10'>
-            <div className='leading-5 w-1/2'>
+        <div className='flex flex-col md:flex-row gap-6 mt-10'>
+            <div className='leading-5 md:w-1/2'>
                 <h1 className='text-xl mb-4 font-semibold'>Let’s talk how I can help you!</h1>
                 <p className='mb-4'>If you like my work and want to avail my services then drop me a message using the contact form.</p>
                 <p className='mb-4'>Or get in touch using my email, skype or my contact number.</p>
@@ -21,7 +21,7 @@ export const Contact = () => {
                 </div>
 
             </div>
-            <form action="https://formspree.io/f/xknekqjv" method="post" className='w-1/2'>
+            <form action="https://formspree.io/f/xknekqjv" method="post" className='md:w-1/2'>
                 
                 <div className='w-1/2 float-left'>
                     <label for="name" className="block mb-2 text-sm font-medium text-gray-900">Your name</label>

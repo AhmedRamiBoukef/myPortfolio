@@ -3,7 +3,7 @@ import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from './Drawer';
 
-export const Navbar = () => {
+export const Navbar = ({isOpen, setIsOpen}) => {
     const [scroll,setScroll] = useState(true);
     const changeBg = () => {
         if (window.scrollY <= 60) {
@@ -15,7 +15,7 @@ export const Navbar = () => {
     if (typeof window !== 'undefined') {
         window.addEventListener("scroll",changeBg)
       }
-    const [isOpen, setIsOpen] = useState(false);
+    
 
     
     
@@ -31,13 +31,7 @@ export const Navbar = () => {
             ))}
         </div>
         <MenuIcon className='block md:hidden cursor-pointer' onClick={() => setIsOpen(true)} />
-        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-            <div className='md:flex flex-col justify-around items-center gap-6 mr-6 hidden'>
-                {["Home","About","Expertise","Skills","Projects","Contact"].map(elem => (
-                    <a key={elem} href={`#${elem}`} className="font-semibold hover:text-[rgba(0,0,0,0.65)]">{elem}</a>
-                ))}
-            </div>
-        </Drawer>
+        
 
             
         
