@@ -87,7 +87,7 @@ const l = [
     links: [
       {
         icon: <LaunchIcon className="text-red-600" />,
-        link: "https://eu.junctionplatform.com/dashboard/junctionx-algiers-2023",
+        link: "https://www.tinkercad.com/things/kGe8MnTZSjy-copy-of-copy-of-copy-of-fire-detection/editel?sharecode=ZnXVzWs_rE0CLgZ_GlaIsGjsvM1T95OPgz6LiOfc4aw",
       },
       {
         icon: <GitHubIcon className="text-red-600" />,
