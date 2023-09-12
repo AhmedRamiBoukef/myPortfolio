@@ -34,7 +34,7 @@ export const Expertise = () => {
           <div key={elem.title} className={elem.style}>
             <div className='flex gap-6'>
               <div>
-                <Image src={elem.logo} alt={elem.title} height="80px" width="80px" />
+                <Image sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' loading='eager' src={elem.logo} alt={elem.title} height="80px" width="80px" />
               </div>
               <h1 className='text-2xl font-semibold leading-5 my-1.5'>{elem.title}</h1>
             </div>

@@ -10,7 +10,7 @@ export const About2 = () => {
         <div className='text-lg flex flex-col-reverse md:grid gap-10 items-center md:grid-cols-3 px-12 leading-5 text-center md:text-left' id='About'>
             <div className='md:col-span-2'>
                 <h1 className='my-4 text-4xl font-semibold'>Hi! 👋 I’m Ahmed Rami.</h1>
-                <p className='mb-4 '>I am passionate about UI/UX design and Web Design. I am a skilled front-end developer and master of graphic design tools such as Photoshop and Sketch. I am a quick learner and a team worker that gets the job done. I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas.</p>
+                <p className='mb-4 '>I am a motivated full-stack web developer with extensive knowledge and skills in both front-end and back-end development. I am passionate about delivering high-quality solutions and driving innovation in web development.</p>
                 <div className='md:grid text-base grid-cols-2 mt-10 md:w-[80%]'>
                     <div className='grid md:grid-cols-2 grid-cols-2 text-left '>
                         {[['Nationality:','Algerian'],['Languages:','Arabic,English,French'],['Live in:','Algeria']].map(elem => (
@@ -32,7 +32,7 @@ export const About2 = () => {
             </div>
             <div className="losange shadow-xl">
                 <div className="los1">
-                    <Image src={image} alt="image"/>
+                    <Image sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' loading='eager' src={image} alt="image"/>
                 </div>
             </div>
         </div>    

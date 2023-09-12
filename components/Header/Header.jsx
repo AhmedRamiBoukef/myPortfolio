@@ -24,7 +24,7 @@ export const Header = () => {
     <motion.div whileInView={scaleVariants.whileInView} className='bgImage h-[100vh]'>
       <div className='h-[100vh] relative z-[1] place-content-center items-center mx-14 grid md:grid-cols-2 gap-6 tracking-wide'>
         <div className='w-2/3 md:w-full mx-auto' >
-           <Image src={helloImage} alt="Hello" layout='responsive' />
+           <Image sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' loading='eager' src={helloImage} alt="Hello" layout='responsive' />
         </div>
         <div className='leading-5 text-center md:text-left '>
           <p className='mb-2 text-xl font-light leading-6'>HELLO!</p>
@@ -34,14 +34,14 @@ export const Header = () => {
           </div>
           <p className='text-xl md:mt-8 md:mb-4'>FullStack Web & Mobile Developer</p>
           <div className='w-full flex gap-2 flex-wrap h-10 items-center justify-center md:justify-start'>
-            <a href='https://github.com/AhmedRamiBoukef'><GitHubIcon className='w-5' /></a>
-            <a href='https://www.facebook.com/profile.php?id=100023699016162'><FacebookIcon className='w-5'/></a>
-            <a href='https://instagram.com/rami_boukef?igshid=YmMyMTA2M2Y='><InstagramIcon className='w-5'/></a>
-            <a href='https://www.linkedin.com/in/ahmedrami-boukef-029678228'><LinkedInIcon className='w-5'/></a>
+            <a title='github' target="_blank" rel="noreferrer" href='https://github.com/AhmedRamiBoukef'><GitHubIcon className='w-5' /></a>
+            <a title='facebook' target="_blank" rel="noreferrer" href='https://www.facebook.com/profile.php?id=100023699016162'><FacebookIcon className='w-5'/></a>
+            <a title='instagram' target="_blank" rel="noreferrer" href='https://instagram.com/rami_boukef?igshid=YmMyMTA2M2Y='><InstagramIcon className='w-5'/></a>
+            <a title='linkedin' target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/ahmedrami-boukef'><LinkedInIcon className='w-5'/></a>
           </div>
           <div className='md:mt-10 mt-5'>
-            <a href="" className='py-2.5 px-9 bg-[#f6e05e] transition ease-in-out duration-300 hover:bg-[#F4F6F8] hover:border-2 hover:border-[#f6e05e] rounded font-bold text-center'>
-              Get In Touch
+            <a title='cv' target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/19__uiarnLSXVCnzzI_PN0vWz_0dmMs-M/view?usp=sharing" className='py-2.5 px-9 bg-[#f6e05e] transition ease-in-out duration-300 hover:bg-[#F4F6F8] hover:border-2 hover:border-[#f6e05e] rounded font-bold text-center'>
+              Dwonload CV
             </a>
           </div>
         </div>

@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["img.youtube.com"],
+    domains: ["img.youtube.com", "res.cloudinary.com"],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

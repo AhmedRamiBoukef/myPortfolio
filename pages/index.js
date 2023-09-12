@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Navbar } from "../components/Navbar/Navbar";
 import { Header } from "../components/Header/Header";
-import { Skills } from "../components/Skills/Skills"; 
+import { Skills } from "../components/Skills/Skills";
 import { Expertise } from "../components/Expertise/Expertise";
 import { Projects } from "../components/Projects/Projects";
 import { Contact } from "../components/Contact/Contact";
@@ -16,23 +16,43 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Portfolio</title>
+        <meta name="title" content="Ahmed Rami Boukef" />
+        <meta
+          name="description"
+          content="Passionate full-stack web developer delivering high-quality solutions. Seeking growth-oriented opportunities to showcase innovative expertise."
+        />
+        <meta
+          name="keywords"
+          content="Full-stack web development, Front-end development, Back-end development, Responsive web design, HTML5, CSS3, JavaScript, React.js, Node.js, Express.js, MongoDB, MySQL, PHP, Laravel, WordPress, API integration, Git, Agile development, UI/UX design, Cross-browser compatibility, Mobile-first approach, Performance optimization, Web accessibility, Test-driven development (TDD), Problem-solving, Team collaboration, Project management, Continuous learning, Innovation"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <title>Ahmed Rami Boukef</title>
       </Head>
 
-      <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-            <div className='md:flex flex-col justify-around items-center gap-6 mr-6 hidden'>
-                {["Home","About","Expertise","Skills","Projects","Contact"].map(elem => (
-                    <a key={elem} href={`#${elem}`} className="font-semibold hover:text-[rgba(0,0,0,0.65)]">{elem}</a>
-                ))}
-            </div>
+        <div className="md:flex flex-col justify-around items-center gap-6 mr-6 hidden">
+          {["Home", "About", "Expertise", "Skills", "Projects", "Contact"].map(
+            (elem) => (
+              <a
+                key={elem}
+                href={`#${elem}`}
+                className="font-semibold hover:text-[rgba(0,0,0,0.65)]"
+              >
+                {elem}
+              </a>
+            )
+          )}
+        </div>
       </Drawer>
-      <Header/>
+      <Header />
       <About2 />
-      <Expertise/>
-      <Skills/>
+      <Expertise />
+      <Skills />
       <Projects2 />
-      <Contact/>
+      <Contact />
       <Footer />
     </div>
   );

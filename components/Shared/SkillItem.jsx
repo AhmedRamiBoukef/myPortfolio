@@ -7,7 +7,7 @@ export const SkillItem = ({title,imageURL}) => {
         <div className='bg-[#00509D] rounded shadow-2xl '>
             <div className='p-6'>
                 <div className='relative h-[80px] flex justify-center items-center w-auto max-w-full pointer-events-none'>
-                    <Image src={imageURL} alt={title} height={title === "Next.js" ? "":"80px"} width={title === "Next.js" ? "":"80px"}/>
+                    <Image sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' loading='eager' src={imageURL} alt={title} height={title === "Next.js" ? "":"80px"} width={title === "Next.js" ? "":"80px"}/>
                 </div>
             </div>
             <div className='w-full bg-[#11296B] px-4 py-2 min-h-[43.5px] rounded-b'>
